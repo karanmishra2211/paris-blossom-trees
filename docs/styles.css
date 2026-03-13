@@ -23,9 +23,12 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(247, 211, 227, 0.65), transparent 28%),
-    radial-gradient(circle at top right, rgba(251, 236, 200, 0.55), transparent 24%),
-    linear-gradient(180deg, #f7f3ed 0%, #f2efe8 100%);
+    radial-gradient(circle at top left, rgba(247, 211, 227, 0.52), transparent 32%),
+    radial-gradient(circle at center top, rgba(250, 220, 232, 0.22), transparent 44%),
+    radial-gradient(circle at center, rgba(245, 205, 224, 0.16), transparent 52%),
+    radial-gradient(circle at bottom right, rgba(243, 211, 228, 0.18), transparent 36%),
+    radial-gradient(circle at top right, rgba(251, 236, 200, 0.32), transparent 26%),
+    linear-gradient(180deg, #f8f2ef 0%, #f5f0eb 46%, #f4eef0 100%);
 }
 
 body::before {
