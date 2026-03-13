@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paris Blossom Trees</title>
+    <meta
+      name="description"
+      content="A small AI-assisted data exploration project using the Paris open trees dataset."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="page">
+      <section class="hero">
+        <p class="eyebrow">AI Agent Data Exploration Demo</p>
+        <h1>Paris Blossom Trees</h1>
+        <p class="lede">
+          This mini-site shows how an AI agent can go from a raw open dataset to a
+          filtered geographic story: identify a visually interesting subset, extract
+          the records, and render a map that is presentation-ready.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="./assets/paris_cerisier_leaf_map.html">Open Interactive Map</a>
+          <a class="button" href="./assets/paris_cerisier_a_fleurs_points.csv">Download Filtered CSV</a>
+        </div>
+      </section>
+
+      <section class="summary grid">
+        <article class="card stat-card">
+          <p class="stat-label">Dataset</p>
+          <p class="stat-value">Paris Open Data</p>
+          <p class="stat-copy"><code>les-arbres</code> official urban tree inventory</p>
+        </article>
+        <article class="card stat-card">
+          <p class="stat-label">Subset</p>
+          <p class="stat-value">Cerisier a fleurs</p>
+          <p class="stat-copy">Pink-blossom trees filtered from the full city dataset</p>
+        </article>
+        <article class="card stat-card">
+          <p class="stat-label">Records Shown</p>
+          <p class="stat-value">4,148</p>
+          <p class="stat-copy">Mapped as star-shaped bloom markers over central Paris</p>
+        </article>
+      </section>
+
+      <section class="story grid-two">
+        <article class="card">
+          <h2>What the agent did</h2>
+          <ol class="steps">
+            <li>Discovered the official Paris trees dataset and inspected its schema.</li>
+            <li>Profiled species labels to find blossom-heavy candidates.</li>
+            <li>Filtered <code>Cerisier a fleurs</code> rows and exported coordinates.</li>
+            <li>Generated both interactive and static maps for class-ready use.</li>
+          </ol>
+        </article>
+        <article class="card">
+          <h2>Why this is useful in class</h2>
+          <p>
+            The point is not just making a map. It is compressing the first hour of
+            exploratory analysis into a short, inspectable workflow: data discovery,
+            subset definition, verification, and visual output.
+          </p>
+          <p>
+            This is a concrete example of using AI agents for data exploration rather
+            than only text generation.
+          </p>
+        </article>
+      </section>
+
+      <section class="map-section">
+        <div class="section-copy">
+          <p class="eyebrow">Static Output</p>
+          <h2>Star-marked blossom clusters across Paris</h2>
+          <p>
+            The static map below is tuned for presentation use: a clean basemap, a
+            tighter crop around the city, and bright blossom markers that read well on
+            slides.
+          </p>
+        </div>
+        <figure class="map-frame">
+          <img
+            src="./assets/paris_cerisier_leaf_map.png"
+            alt="Map of Paris blossom trees with pink star-shaped markers"
+          >
+        </figure>
+      </section>
+
+      <section class="embed-section">
+        <div class="section-copy">
+          <p class="eyebrow">Interactive Output</p>
+          <h2>Explore the same subset in the browser</h2>
+        </div>
+        <div class="embed-frame">
+          <iframe
+            src="./assets/paris_cerisier_leaf_map.html"
+            title="Interactive Paris blossom tree map"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

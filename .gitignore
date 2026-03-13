@@ -1,0 +1,13 @@
+.DS_Store
+.cache/
+.mpl-cache/
+__pycache__/
+
+# Large raw downloads
+bengaluru_trees.kmz
+paris_trees.csv
+resource_page.html
+
+# Keep deployable web assets in docs/, not duplicated output files
+output/
+HB1XU_naUAA2FH4.jpeg

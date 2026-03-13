@@ -1,0 +1,39 @@
+% Paris Trees agent demo slides (paste into your Beamer deck)
+
+\begin{frame}{Agent-Led Data Exploration: Paris Trees}
+  \textbf{Case:} Paris open tree inventory (\texttt{les-arbres}) and blossom-tree discovery.
+
+  \vspace{0.25cm}
+  \begin{columns}[T]
+    \begin{column}{0.56\textwidth}
+      \secheading{What the agent did}
+      \begin{itemize}
+        \setlength{\itemsep}{2pt}
+        \item Located and downloaded the official Paris tree dataset
+        \item Profiled species counts to find a bloom-focused subset
+        \item Filtered \textit{Cerisier \`a fleurs} coordinates (4,148 points)
+        \item Generated reusable scripts + map outputs automatically
+      \end{itemize}
+    \end{column}
+    \begin{column}{0.40\textwidth}
+      \begin{resultbox}[\faRobot\enspace Why this matters]
+        From raw open data to a classroom-ready visualization in one workflow:
+        \highlight{query $\rightarrow$ filter $\rightarrow$ map}.
+      \end{resultbox}
+    \end{column}
+  \end{columns}
+\end{frame}
+
+\begin{frame}{Paris Blossom Map (AI-Generated)}
+  \textbf{Output:} Star-shaped pink markers over a clean basemap, centered on Paris city core.
+
+  \vspace{0.2cm}
+  \begin{center}
+    \includegraphics[width=0.94\linewidth]{output/paris_cerisier_leaf_map.png}
+  \end{center}
+
+  \vspace{-0.1cm}
+  \scriptsize
+  Data source: Paris Open Data (\texttt{les-arbres}).\;
+  Subset shown: \textit{Cerisier \`a fleurs} (4,148 records).
+\end{frame}
